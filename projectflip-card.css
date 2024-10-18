@@ -1,0 +1,96 @@
+body {
+  background-color: black;
+}
+
+.container {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  background-color: transparent;
+  text-align: center;
+}
+.box1 {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  background: linear-gradient(145deg, blue, magenta);
+  text-align: center;
+}
+.box2 {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  background: linear-gradient(145deg, blue, green);
+  text-align: center;
+}
+
+.flip-card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10%;
+  transform-style: preserve-3d;
+  transition: 1s;
+}
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+.front-side {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(145deg, yellow, magenta);
+  backface-visibility: hidden;
+  /* transform: rotate(180deg); */
+  /* font-size: 40px; */
+}
+.back-side {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(145deg, magenta, yellow);
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  color: white;
+}
+i {
+  color: white;
+  font-size: 30px;
+  margin-top: 40px;
+}
+h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+p {
+  font-size: large;
+  color: white;
+  text-decoration: underline;
+  filter: brightness(50%);
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-top: 0;
+  padding-top: 125px;
+}
+h1 {
+  font-size: 50px;
+  font-weight: lighter;
+  padding-top: 0;
+}
+button {
+  height: 40px;
+  width: 100px;
+  border: 1px solid;
+  border-radius: 10%;
+}
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding-top: 350px;
+}

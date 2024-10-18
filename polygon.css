@@ -1,0 +1,60 @@
+.nav {
+  width: 950px;
+  float: right;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: red;
+}
+p {
+  font-size: 22px;
+  text-align: justify;
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+h1 {
+  font-size: 28px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.img {
+  height: 800px;
+  width: 800px;
+  float: left;
+  clip-path: polygon(100% 0, 0% 100%, 0 1%);
+  shape-outside: polygon(100% 0, 0% 100%, 0 1%);
+  clip-rule: evenodd;
+  shape-margin: 10px;
+}
+i {
+  font-size: 100px;
+  animation-name: hovering;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+/*how t0 use animation on this.*/
+
+i:hover::after {
+  content: " +91-9891504422";
+  font-size: 25px;
+  color: red;
+}
+@keyframes hovering {
+  0% {
+    transform: tranlateX(0px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

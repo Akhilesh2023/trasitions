@@ -1,0 +1,57 @@
+.box1 {
+  width: 500px;
+  height: 700px;
+  background-color: red;
+  border: 2px solid green;
+  /* transition-property: background-color, border-radius, color;
+  transition-duration: 1s;
+  transition-delay: 1s;*/
+  /* text-align: center;
+  text-decoration-line: underline;
+  font-size: 50px;
+  font-weight: bolder;
+  color: aqua; */
+  animation-name: hovering;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* animation-fill-mode: forwards; */
+}
+
+/* .box1:hover {
+  background-color: yellow;
+  border-radius: 50%;
+  color: blueviolet;
+} */
+@keyframes hovering {
+  /* from {
+    tranform: rotate(0deg);
+  }
+  to {
+    transform: rotate(145deg);
+  } */
+  0% {
+    transform: rotate(0deg);
+    background-color: pink;
+  }
+  25% {
+    transform: rotate(72.5deg);
+    background-color: green;
+    border-radius: 25%;
+  }
+  50% {
+    transform: rotate(145deg);
+    background-color: yellow;
+    border-radius: 50%;
+  }
+  75% {
+    transform: rotate(72.5deg);
+    background-color: aquamarine;
+    border-radius: 10%;
+  }
+  100% {
+    transform: rotate(0deg);
+    background-color: brown;
+  }
+}
